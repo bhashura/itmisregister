@@ -85,9 +85,16 @@
   })
     .then(() => {
   // Data saved successfully!
-      //swal("success");
-      alert("Registration Successful !");
-      location.href="https://bhashura.github.io/itmisregister/";
+      //alert("Registration Successful !");
+      //location.href="https://bhashura.github.io/itmisregister/";
+      swal({
+      title :"Registration Successful!",
+      icon : "success",
+      type :"success"
+      })  .then(function() {
+          window.location = "https://bhashura.github.io/itmisregister";
+          });
+    })
     })
     
     .catch((error) => {
